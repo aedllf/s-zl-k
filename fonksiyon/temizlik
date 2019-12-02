@@ -1,0 +1,11 @@
+def stem(a):
+    t=""
+    
+    for x in a:
+        for y in x:
+            if not(y=="¨" or y=="~" or y=="`" or y=="|"y==">" or y=="<" or y=="!" or y=="#" or y=="$" or y=="." or y=="'" or y=="}" or y=="^" or y=="+" or y=="&" or y=="{"or y=="("or y==")"or y=="="or y==","or y==";"or y==":"or y=="%"or y=="#"or y=="$"or y=="/"or y=="?"or y=="["or y=="]" y=="-"or y=="*"or y=="_") :
+                t=t+y
+            else:
+                t=t+" "
+    t=t.lower()
+    return t.split()
